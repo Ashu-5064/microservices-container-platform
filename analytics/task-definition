@@ -1,0 +1,56 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:122610523985:task-definition/analytics-task:1",
+    "containerDefinitions": [
+        {
+            "name": "analytics",
+            "image": "122610523985.dkr.ecr.us-east-1.amazonaws.com/analytics:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 5000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "family": "analytics-task",
+    "executionRoleArn": "arn:aws:iam::122610523985:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "MANAGED_INSTANCES",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2026-01-20T22:49:30.352Z",
+    "registeredBy": "arn:aws:iam::122610523985:root",
+    "tags": []
+}

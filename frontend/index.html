@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Microservices Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 60px;
+    }
+    .card {
+      background: white;
+      color: #333;
+      width: 260px;
+      padding: 25px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Microservices Container Platform</h1>
+  <p>Select a feature</p>
+
+  <div class="cards">
+    <div class="card" onclick="location.href='/analytics'">
+      <h2>📊 Analytics</h2>
+      <p>Real-time service metrics</p>
+    </div>
+
+    <div class="card" onclick="location.href='/reports'">
+      <h2>📄 Reports</h2>
+      <p>Business & system reports</p>
+    </div>
+  </div>
+</body>
+</html>
+
